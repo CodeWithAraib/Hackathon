@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Hero from './Hero';
 
 const initialCartItems = [
@@ -60,7 +61,7 @@ const ShoppingCart: React.FC = () => {
             {cartItems.map((item, index) => (
               <tr key={index} className="border-b">
                 <td className="p-4 flex items-center">
-                  <img src={item.image} alt={item.name} className="w-16 h-16 object-cover rounded mr-4" />
+                  <Image src={item.image} alt={item.name} className="w-16 h-16 object-cover rounded mr-4" />
                   <span>{item.name}</span>
                 </td>
                 <td className="p-4">${item.price.toFixed(2)}</td>

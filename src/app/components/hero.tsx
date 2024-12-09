@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 function Hero() {
   return (
@@ -31,7 +31,7 @@ function Hero() {
 
       {/* Image */}
       <div className="mt-[30px] ml-24 md:mt-0 md:w-[50%] flex justify-center">
-        <img
+        <Image
           src="/main.png"
           alt="Hero Image"
           className="w-[90%] md:w-auto max-w-[590px] md:max-w-full"

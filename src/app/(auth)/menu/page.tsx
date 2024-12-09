@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const MenuPage: React.FC = () => {
   return (
@@ -12,9 +14,9 @@ const MenuPage: React.FC = () => {
       >
         <h1 className="text-white text-3xl font-bold">Our Menu</h1>
         <p className="text-white mt-2">
-          <a href="/" className="text-gray-300 hover:underline">
+          <Link href="/" className="text-gray-300 hover:underline">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span className="text-orange-500">›</span>{" "}
           <span className="text-orange-500">Menu</span>
         </p>
@@ -25,7 +27,7 @@ const MenuPage: React.FC = () => {
         <div className="bg-gray-50 flex justify-center items-center p-4">
       <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg flex flex-col md:flex-row">
         <div className="w-[448] h-[626] md:w-1/2 p-4">
-          <img
+          <Image
             src="/menu-img/Start-Menu.png" // Replace with your actual image path
             alt="Dish"
             className="rounded-lg w-full h-auto object-cover"
@@ -75,7 +77,7 @@ const MenuPage: React.FC = () => {
         <div className="bg-gray-50 flex justify-center items-center p-4">
       <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 p-4">
-          <img
+          <Image
             src="/menu-img/Main-Course.png" // Replace with your actual image path
             alt="Dish"
             className="rounded-lg w-full h-auto object-cover"
@@ -126,22 +128,22 @@ const MenuPage: React.FC = () => {
        <section className="bg-black py-12 rounded-lg mb-16">
           <div className="grid grid-cols-2 md:grid-cols-4 text-center gap-6">
             <div>
-            <img src="/menu-img/Group-1.png" alt="Partner 1" className="h-16 mx-auto" />
+            <Image src="/menu-img/Group-1.png" alt="Partner 1" className="h-16 mx-auto" />
               <h3 className="text-4xl font-bold text-white">420+</h3>
               <p className="text-sm text-white">Professional Chiefs</p>
             </div>
             <div>
-            <img src="/menu-img/Group-2.png" alt="Partner 1" className="h-16 mx-auto" />
+            <Image src="/menu-img/Group-2.png" alt="Partner 1" className="h-16 mx-auto" />
               <h3 className="text-4xl font-bold text-white">320+</h3>
               <p className="text-sm text-white">Items Of Food</p>
             </div>
             <div>
-            <img src="/menu-img/Group-3.png" alt="Partner 1" className="h-16 mx-auto" />
+            <Image src="/menu-img/Group-3.png" alt="Partner 1" className="h-16 mx-auto" />
               <h3 className="text-4xl font-bold text-white">30+</h3>
               <p className="text-sm text-white">Years Of Experience</p>
             </div>
             <div>
-            <img src="/menu-img/Group-4.png" alt="Partner 1" className="h-16 mx-auto" />
+            <Image src="/menu-img/Group-4.png" alt="Partner 1" className="h-16 mx-auto" />
               <h3 className="text-4xl font-bold text-white">200+</h3>
               <p className="text-sm text-white">Happy Customers</p>
             </div>
@@ -152,7 +154,7 @@ const MenuPage: React.FC = () => {
         <div className="bg-gray-50 flex justify-center items-center p-4">
       <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 p-4">
-          <img
+          <Image
             src="/menu-img/Desert.png" // Replace with your actual image path
             alt="Dish"
             className="rounded-lg w-full h-auto object-cover"
@@ -202,7 +204,7 @@ const MenuPage: React.FC = () => {
         <div className="bg-gray-50 flex justify-center items-center p-4">
       <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 p-4">
-          <img
+          <Image
             src="/menu-img/Drink.png" // Replace with your actual image path
             alt="Dish"
             className="rounded-lg w-full h-auto object-cover"
@@ -254,12 +256,12 @@ const MenuPage: React.FC = () => {
         <section className="py-12 text-center">
           <h2 className="text-2xl font-semibold mb-6">We work with the best people</h2>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-            <img src="/menu-img/Partner (1).png" alt="Partner 1" className="h-16 mx-auto" />
-            <img src="/menu-img/Partner (2).png" alt="Partner 2" className="h-16 mx-auto" />
-            <img src="/menu-img/Partner (3).png" alt="Partner 3" className="h-16 mx-auto" />
-            <img src="/menu-img/Partner (4).png" alt="Partner 4" className="h-16 mx-auto" />
-            <img src="/menu-img/Partner (5).png" alt="Partner 5" className="h-16 mx-auto" />
-            <img src="/menu-img/Partner (6).png" alt="Partner 5" className="h-16 mx-auto" />
+            <Image src="/menu-img/Partner (1).png" alt="Partner 1" className="h-16 mx-auto" />
+            <Image src="/menu-img/Partner (2).png" alt="Partner 2" className="h-16 mx-auto" />
+            <Image src="/menu-img/Partner (3).png" alt="Partner 3" className="h-16 mx-auto" />
+            <Image src="/menu-img/Partner (4).png" alt="Partner 4" className="h-16 mx-auto" />
+            <Image src="/menu-img/Partner (5).png" alt="Partner 5" className="h-16 mx-auto" />
+            <Image src="/menu-img/Partner (6).png" alt="Partner 5" className="h-16 mx-auto" />
           </div>
         </section>
       </main>

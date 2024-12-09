@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const FAQPage = () => {
   const faqs = [
@@ -45,9 +46,9 @@ const FAQPage = () => {
       >
         <h1 className="text-white text-3xl font-bold">FAQ PAGE</h1>
         <p className="text-white mt-2">
-          <a href="/" className="text-gray-300 hover:underline">
+          <Link href="/" className="text-gray-300 hover:underline">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span className="text-orange-500">›</span>{" "}
           <span className="text-orange-500">FAQ</span>
         </p>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SigninPage() {
   return (
@@ -69,10 +70,10 @@ export default function SigninPage() {
           <div className="text-center mt-8">
             <p>or</p>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <img src="/Google.png" alt="" className="h-6 mr-2" />
+              <Image src="/Google.png" alt="" className="h-6 mr-2" />
               </button>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <img src="/Apple.png" alt="" className="h-6 mr-2" />
+              <Image src="/Apple.png" alt="" className="h-6 mr-2" />
               
             </button>
           </div>

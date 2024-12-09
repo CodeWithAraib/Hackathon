@@ -9,7 +9,7 @@ const testimonials = [
     role: 'Food Specialist',
     image: '/placeholder.svg?height=80&width=80',
     quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.',
-    rating: 4,
+    rating: 4
   },
   // Add more testimonials here...
 ]
@@ -27,13 +27,13 @@ export default function SevenHero() {
           <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
             <Image
               src="/review.jpeg"
-              alt=""
+              alt="review"
               width={80}
               height={80}
               className="rounded-full border-4 border-white"
             />
           </div>
-          <div className="text-6xl text-amber-500 mb-4">"</div>
+          <div className="text-6xl text-amber-500 mb-4"></div>
           <p className="text-gray-600 mb-6">{testimonials[currentTestimonial].quote}</p>
           <div className="flex justify-center mb-4">
             {[...Array(5)].map((_, i) => (

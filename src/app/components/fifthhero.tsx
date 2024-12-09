@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
+
 const menuCategories = ["Breakfast", "Lunch", "Dinner", "Dessert", "Drink", "Snack", "Soups"];
 
 const menuItems = [
@@ -12,7 +13,7 @@ const menuItems = [
   { name: "Glow Cheese", description: "Lacus nisi, et ac dapibus velit in consequat.", price: "12.5$", image: "/15.jpeg" },
   { name: "Italian Pizza", description: "Lacus nisi, et ac dapibus velit in consequat.", price: "14.5$", image: "/16.jpeg" },
   { name: "Slice Beef", description: "Lacus nisi, et ac dapibus velit in consequat.", price: "12.5$", image: "/17.jpeg" },
-  { name: "Mushroom Pizza", description: "Lacus nisi, et ac dapibus velit in consequat.", price: "12.5$", image: "/18.jpeg" },
+  { name: "Mushroom Pizza", description: "Lacus nisi, et ac dapibus velit in consequat.", price: "12.5$", image: "/18.jpeg" }
 ];
 
 const FifthHero: React.FC = () => {
@@ -42,24 +43,26 @@ const FifthHero: React.FC = () => {
 
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-1/2">
-            <Image
-              src="/00.png" // Dynamic image path for the featured dish
-              alt="Featured Dish"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover w-full h-full"
-            />
+
+          <Image
+            src="/00.png" // Static path
+            alt="Featured Dish"
+            width={500}
+            height={500}
+            className="rounded-lg object-cover w-full h-full"
+          />
+
           </div>
           <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {menuItems.map((item, index) => (
               <div key={index} className="flex items-center gap-4">
-                <Image
-                  src={item.image} // Construct the src dynamically
-                  alt={item.name}
-                  width={80}
-                  height={80}
-                  className="rounded-lg object-cover"
-                />
+              <Image
+                 src={item.image}
+                 alt={item.name}
+                 width={80}
+                 height={80}
+                 className="rounded-lg object-cover"
+              />
                 <div>
                   <h3 className="font-semibold text-lg">{item.name}</h3>
                   <p className="text-gray-400 text-sm">{item.description}</p>

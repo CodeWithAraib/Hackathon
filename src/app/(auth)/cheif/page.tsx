@@ -1,5 +1,7 @@
 
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const chefs = [
   { name: "Tahmina Rumi", role: "Chef", img: "/Chief-img/Cheif-1.png" },
@@ -29,9 +31,9 @@ const ChefGallery = () => {
       >
         <h1 className="text-white text-3xl font-bold">Our Cheifs</h1>
         <p className="text-white mt-2">
-          <a href="/" className="text-gray-300 hover:underline">
+          <Link href="/" className="text-gray-300 hover:underline">
             Home
-          </a>{" "}
+          </Link>{" "}
           <span className="text-orange-500">›</span>{" "}
           <span className="text-orange-500">Cheifs</span>
         </p>
@@ -45,7 +47,7 @@ const ChefGallery = () => {
             <div
               key={index}
               className="bg-white shadow-md rounded-lg overflow-hidden">
-              <img
+              <Image
                 src={chef.img}
                 alt={chef.name}
                 className="w-full h-96 object-cover"
